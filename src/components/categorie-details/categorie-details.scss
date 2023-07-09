@@ -1,0 +1,99 @@
+.categorie-details-container {
+    &__header {
+        display: flex;
+        width: 100%;
+
+        &__category-section,
+        &__matches-section,
+        &__non-matches-section {
+            width: 33%;
+            padding: 12px 24px;
+
+            @media(max-width: 567px) {
+                padding: 5px 5px;
+            }
+        }
+
+        &__category-section,
+        &__matches-section {
+            border-bottom: 1px solid #FFF;
+            background: #DDE5E9;
+        }
+
+        &__matches-section,
+        &__non-matches-section {
+            text-align: center;
+        }
+
+        &__non-matches-section {
+            border-bottom: 1px solid #E4E7EC;
+            background: #F4EDED;
+        }
+
+    }
+
+    &__sub-header {
+        display: flex;
+
+        &__first-section {
+            width: 33%;
+        }
+
+        &__matches-section {
+            display: flex;
+            width: 33%;
+
+            &__approved-section {
+                width: 50%;
+                padding: 12px 24px;
+
+                @media(max-width: 567px) {
+                    font-size: 12px;
+                    padding: 5px 5px;
+                }
+
+            }
+
+            &__pending-section {
+                width: 50%;
+                padding: 12px 24px;
+
+                @media(max-width: 567px) {
+                    font-size: 12px;
+                    padding: 5px 5px;
+                }
+            }
+        }
+
+        &__third-section {
+            width: 33%;
+            display: flex;
+
+            &__competitor-first {
+                width: 50%;
+                padding: 12px 24px;
+
+                @media(max-width: 567px) {
+                    font-size: 10px;
+                    padding: 5px 5px;
+                }
+            }
+
+            &__competitor-second {
+                width: 50%;
+                padding: 12px 24px;
+
+                @media(max-width: 567px) {
+                    font-size: 10px;
+                    padding: 5px 5px;
+                }
+            }
+        }
+    }
+
+    .sub-categorie-list-container {
+        &.hide {
+            display: none;
+        }
+    }
+}

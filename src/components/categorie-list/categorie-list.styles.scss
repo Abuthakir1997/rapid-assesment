@@ -1,0 +1,63 @@
+.categorie-details-container {
+    .categorie-list-container {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        &-category-name {
+            width: 33%;
+            padding: 16px 24px;
+
+            @media(max-width:567px) {
+                padding: 5px 5px;
+            }
+        }
+
+        &-category-approved {
+            width: 50%;
+            padding: 16px 24px;
+
+            @media (max-width:567px) {
+                padding: 5px 5px;
+            }
+        }
+
+        &-category-pending {
+            width: 50%;
+            padding: 16px 24px;
+
+            @media (max-width:567px) {
+                padding: 5px 5px;
+            }
+        }
+
+        &-category-competitor-first {
+            width: 50%;
+            padding: 16px 24px;
+
+            @media (max-width:567px) {
+                padding: 5px 5px;
+            }
+        }
+
+        &-category-competitor-second {
+            width: 50%;
+            padding: 16px 24px;
+
+            @media (max-width:567px) {
+                padding: 5px 5px;
+            }
+        }
+
+        &-category-non-matches-section {
+            width: 33%;
+            display: flex;
+        }
+
+        &-category-matches-section {
+            width: 33%;
+            display: flex;
+        }
+
+    }
+}
